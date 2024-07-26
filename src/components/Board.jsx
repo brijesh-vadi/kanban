@@ -1,12 +1,11 @@
 import { useState } from "react";
-import BurnBarrel from "./BurlBarrel";
 import Column from "./Column";
 
 const DEFAULT_CARDS = [
   // BACKLOG
-  { title: "Look into render bug in dashboard", id: "1", column: "backlog" },
-  { title: "SOX compliance checklist", id: "2", column: "backlog" },
-  { title: "[SPIKE] Migrate to Azure", id: "3", column: "backlog" },
+  { title: "Task 1", id: "1", column: "backlog" },
+  { title: "2", id: "2", column: "backlog" },
+  { title: "Task 2", id: "3", column: "backlog" },
   { title: "Document Notifications service", id: "4", column: "backlog" },
   // TODO
   {
@@ -65,7 +64,6 @@ const Board = () => {
         cards={cards}
         setCards={setCards}
       />
-      <BurnBarrel setCards={setCards} />
     </div>
   );
 };
